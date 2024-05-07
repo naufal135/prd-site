@@ -12,6 +12,8 @@
             data = await res.json()
         }
 
+        fetchData().then(() => console.log("Started"))
+
         const interval = setInterval(fetchData, 5000)
 
         return () => clearInterval(interval)
