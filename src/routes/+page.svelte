@@ -1,6 +1,7 @@
 <script lang='ts'>
     import { onMount } from "svelte";
     import Box from "../lib/Box.svelte";
+    import "../app.pcss";
 
     const url = 'http://65.108.223.40:8080'
     $: data = [false, false, false, false, false, false]
