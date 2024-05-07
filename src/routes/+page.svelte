@@ -3,7 +3,7 @@
     import Box from "../lib/Box.svelte";
     import "../app.pcss";
 
-    const url = 'http://65.108.223.40:8080'
+    const url = 'https://cors-anywhere.herokuapp.com/http://65.108.223.40:8080'
     $: data = [false, false, false, false, false, false]
 
     onMount(() => {
@@ -12,7 +12,7 @@
             data = await res.json()
         }
 
-        const interval = setInterval(fetchData, 1000)
+        const interval = setInterval(fetchData, 5000)
 
         return () => clearInterval(interval)
     })
