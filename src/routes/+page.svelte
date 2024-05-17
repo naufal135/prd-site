@@ -24,5 +24,4 @@
     {#each {length: 6} as _, i }
         <Box taken={data[i]}/>
     {/each}
-    {data}
 </div>
